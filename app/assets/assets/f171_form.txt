@@ -1,0 +1,534 @@
+﻿#1|General information
+1.1|Ship's Flag:
+1.2|Summer Deadweight: (metric tones)
+1.3|Summer Draft: (metric tones)
+1.4|Gross tonnage:
+1.5|Date/Time the inspection commenced:
+1.6|Date/Time the inspection was completed:
+1.7|Vessel's operation at the time of the inspection:
+1.8|Hull type
+1.9|Hatch Cover Type:
+1.10|Is the vessel suitable for heavy cargoes of 1780 kg/m3 & above?
+1.11|Is the vessel restricted by SOLAS XII/14?
+1.12|Are cargo holds used for ballast?
+1.13|Date & Port of the last port State Control Inspection:
+1.14|Date of last Flag State Inspection:
+1.15|Classification Society:
+1.16|Date of Expiry of the Class Certificate:
+1.17|Date the last special survey was completed:
+1.18|Date of departure from the last class-credited drydock:
+1.19|Was the last scheduled repair period conducted in drydock?
+1.20|Date the last class intermediate survey was completed:
+1.21|Date of the last class Survey Status Report:
+1.22|Date the last class annual survey was completed:
+1.23|Is the vessel free of any extensive steel renewal (>25tons)?
+#2|Certification and documentation
+2.1|Certificate of Registry
+2.2|Continuous Synopsis Record. Latest No of CSR onboard:
+2.3|Document of Compliance (DOC) Name of Company:
+2.4|Safety Management Certificate (SMC)
+2.5|Safety Equipment Certificate, supplemented by Form E
+2.6|Safety Radio Certificate, supplemented by Form R
+2.7|Safety Construction Certificate
+2.8|IOPP Certificate, supplemented by Form A
+2.10|Minimum Safe Manning Certificate
+2.11|Civil Liability for Bunker Oil Pollution (Owner's name should be the same as that on the Registry Certificate)
+2.12|Maritime Labour Convention (2006) Certificate
+2.13|Ballast Water Management Certificate
+2.14|Are class survey reports adequately filed?
+2.15|Is the vessel free of conditions of class or significant recommendations,memoranda or notations?
+2.16|Loadline Certificate
+2.17|International Ship Security Certificate (ISSC)
+2.18|International Sewage Pollution Prevention Certificate
+2.19|International Tonnage Certificate
+2.20|International Anti-fouling System Certificate
+2.21|Engine Air Pollution Prevention Certificate, with supplement
+2.22|US Certificate of Financial Responsibility
+2.23|USCG Certificate of Compliance (COFR). Date of expiry:
+2.24|Ship Sanitation Certificate. Date of expiry:
+2.25|Last Cargo Gear Book endorsement
+2.26|Last Indian Cargo Gear Book endorsements
+2.27|Record date of last superintendent's visit to the vessel
+2.28|Record date of last internal audit report (F.22.1)
+2.29|Does the Master and Officers review the Company's management system and report on any deficiencies? Has there been feedback from office?
+2.30|Is crew aware of CMS?
+2.31|Is crew aware of company's Policies and Health, Safety, Security, Quality, environmental and Energy definition?
+2.32|If the vessel is subject to the Enhanced Survey Programme (ESP), is the report file adequately maintained?
+2.33|Are ESP files available on board at ship's library (old & new vessels)?
+2.34|Have records of ultrasonic tests been maintained on board?
+2.35|Are the publications listed in Form F.4.1 available and the current edition?
+2.36|Are senior officers aware of MSC/Circ.1143 (Guidelines on early assessment of hull damage and possible need for abandonment of bulk carrier)?
+2.37|Is publication "Accident prevention on board ship at sea and in port ILO" available?
+2.38|Are senior officers aware of Guidelines for the mitigation and management of fatigue MSC/Circ.1014?
+2.39|Are MSDS available for Cargo/Bunker/Hazardous Materials?
+#3|Crew management
+3.1|Is Company's procedure that controls hours of work to minimize fatigue being followed?
+3.2|Do all personnel maintain hours of rest records and are the hours of rest in compliance with MLC or STCW requirements?
+3.3|Is watch schedule posted?
+3.4|Are all personnel able to communicate effectively in the English language?
+3.5|Have senior deck officers attended bridge team management courses?
+3.6|Has the Master attended a ship handling course?
+3.7|Are the Officers and crew suitably qualified and is their training and experience adequate?
+3.8|Is company's policy regarding drug and alcohol posted and followed?
+3.9|Are personnel familiar with the use of Alcometer carried onboard?
+3.10|Is the distribution of alcoholic articles to crew under control?
+3.11|Record the date of the last unannounced on-board alcohol test:
+3.12|Record the date of the last unannounced drug and alcohol test undertaken by an external agency:
+#4|Navigation
+4.1|Has the Master written his own Standing Orders and are Bridge Orders being completed and have the deck officers countersigned them as being read and understood?
+4.2|Are deck log books and engine movement (bell) books correctly maintained and is an adequate record being kept of all the navigational activities, both at sea and under pilotage?
+4.3|Are the vessel's maneuvering characteristics displayed on the bridge?
+4.4|Has testing of bridge equipment before arrival and departure being conducted:
+4.5|Has calculation of minimum under keel clearance and squat being made?
+4.6|Has the Bridge been adequately manned at all stages of the voyage and at Anchor and were lookout arrangement adequate? Check for manning levels and entries in the Deck Log Book. Last done:/ Comments:
+4.7|Is the BNWAS operational at all times when the vessel is at sea?
+4.8|Are the Standard Magnetic compass and Gyro compasses operational, properly maintained and adjusted? Check entries in compass observation book. Refer to Bridge Manual. Last entry:/ Comments:
+4.9|Are auto to manual steering changeover procedures clearly identified?
+4.10|Are auto to manual steering changeover recorded during periods of river transits and when navigating through restricted Waters? (Check records).
+4.11|Are the Deck Officers familiar with procedure to retain the VDR data in the event of an incident?
+4.12|Are Charts and ENCs, nautical publications (Paper and Electronic) and other publications on board, current and maintained up to date? Check randomly at least five paper charts and five ENCs for proper handling and updating. Last NM
+4.13|Are Master and deck officers familiar with the operation of the ECDIS system fitted on board?
+4.14|Were the charts and ENCs used for the previous voyage appropriate?
+4.15|Are the Master and deck officers able to produce appropriate documentation that generic training and type-specific familiarization has been undertaken?
+4.16|Has the vessel been safely navigated and in compliance with international regulations?
+4.17|Is the echo sounder recorder marked with a reference date and time on each occasion it is switched on? Last done:/ Comments:
+4.18|Was a comprehensive passage plan available for the previous voyage and did it cover the full voyage from berth to berth?
+4.19|Are applicable alarms, logs, printers set and operational?
+4.20|Are points of interest, No Go areas, abort lines, Navigational Warnings plotted in the ECDIS as well?
+4.21|Record the date of last Navigation audit conducted:
+4.22|Check condition of the following Navigational equipment (Radars, ARPA, Gyro Repeaters, Steering Wheel & autopilot, Speed Log, AIS, GPS & DGPS, NAVTEX, Course Recorder, ALDIS, Navigation lights & shapes & sound signals, Whistle, Bell, VDR, ECDIS)
+4.23|Is a continuous listening watch maintained on VHF channel 16? 4
+4.24|Are the vessel's call sign and Inmarsat ship station identity clearly marked on the radio installation?
+4.25|Are officers aware of the function of the ship security alert system (SSAS) and how it operates? Is SSAS operational?
+4.26|Has a qualified person been designated to handle distress communications?
+4.27|Are the periodical tests of communications equipment being carried out as required?
+4.28|Is the Radio Log being maintained correctly?
+4.29|If applicable, is the emergency radio battery log up to date?
+4.30|Is G.O. license posted nearby communication station?
+4.31|Are officers aware of the requirements for position updating on two-way communications equipment?
+4.32|Are survival craft portable VHF radios and Search and rescue Locating Devices in good order and charged?
+4.33|Is the communications equipment in good order?
+4.34|Is the satellite EPIRB fitted, armed and labeled correctly and inspected in accordance with the manufacturer's requirements?
+4.35|Are radio emergency batteries in a satisfactory condition and fully charged?
+4.36|Are lists of Radio signals the latest edition and corrected up to date?
+4.37|Is the vessel equipped with sufficient intrinsically safe portable radios for use on deck?
+#5|Safety management
+5.1|Has a safety officer been designated and trained to undertake this role? Is his identity well known to all on board?
+5.2|Does safety officer report safety hazards and suggests procedures for the elimination of such hazards?
+5.3|Is personal protective equipment such as boiler suits, safety footwear, eye and ear protection, safety harnesses and chemical protective equipment etc. provided as required and worn?
+5.4|Are Permits to work forms issued where necessary as per Company's procedures?
+5.5|Are regular safety meetings held, are the minutes recorded and does the operator provide shore management responses? Enter last date:
+5.6|Is there a procedure for the reporting, investigation and close-out of accidents, incidents, nonconformities and near misses? Is this procedure being followed up with proper reporting, recording, investigation and close out of action items?
+5.7|Is crew motivated to report accidents and near misses?
+5.8|Are Near Misses discussed in Safety Meetings?
+5.9|Are accidents/ incident reports kept?
+5.10|Is any accident/ incident open?
+5.11|Is a Ship/Shore Safety Check List available and are its provisions being complied with?
+5.12|Are smoking regulations posted and being adhered to and are smoke rooms adequately identified?
+5.13|Are all required external doors, ports and windows kept closed in port?
+5.14|Is all loose gear on deck, in stores and in internal spaces properly secured?
+5.15|Are heaving lines COSWP compliant?
+5.16|Is procedure for familiarization for new personnel followed?
+5.17|Are drills for emergency procedures being carried out?
+5.18|Is regular training in the use of life-saving equipment being undertaken?
+5.19|Are pollution clean-up drills regularly held to determine that the shipboard pollution plan is up-to-date and efficient and are there records?
+5.20|Are all members aware of their duties in case of emergency?
+5.21|Date of last ship-shore drill:
+5.22|Are enclosed space entry procedures in accordance with Company's HSQE manual? Date of last form completed:
+5.23|Are portable gas and oxygen analysers appropriate to the cargoes being carried and are they in good order?
+5.24|Are officers familiar with use and calibration of portable multi gas meters?
+5.25|Is there a record of regular testing and calibration of portable analysers?
+5.26|Is sufficient span calibration gas available for the portable analysers on board?
+5.27|Where toxic gases may be encountered, are appropriate toxic gas detection analysers available and in good order, (if applicable)?
+5.28|Is company's procedure regarding hot work followed and relevant records kept?
+5.29|Is electric welding equipment in good order and are written safety guidelines available on site?
+5.30|Is gas welding and burning equipment in good order?
+5.31|Is fixed piping installed from the gas cylinders to the operating position?
+5.32|Does the CMS provide procedures & instructions to safely carry coal cargoes as per IMO regulations?
+5.33|Check coal cargoes records F.OPS.20a
+5.34|Are life-saving equipment training manuals available and updated?
+5.35|Are maintenance instructions available and are weekly and monthly inspections being carried out?
+5.36|Are muster lists and lifejacket donning instructions displayed?
+5.37|Is the maintenance and test schedule for lifeboat-on-load release gear followed?
+5.38|Are lifeboats, including their equipment and launching mechanisms, in good order?
+5.39|Are lifeboat and liferaft operating instructions displayed?
+5.40|Is the rescue boat, including its equipment and launching arrangement, in good order?
+5.41|Are liferafts in good order?
+5.42|Are hydrostatic releases, where fitted, correctly attached and in good order?
+5.43|Are lifebuoys, lights, buoyant lines, quick releases mechanisms and self-activating smoke floats in good order?
+5.44|Are lifejackets in good order?
+5.45|Are immersion suits, where required, in a satisfactory condition?
+5.46|Are pyrotechnics, including line throwing apparatus not expired and in good order?
+5.47|Are the locations of life saving appliances marked with IMO symbols?
+5.48|Is crew familiar with life-saving equipment?
+5.49|Are fire training manuals available and updated?
+5.50|Are fire safety operational booklets available?
+5.51|Are inspection records and inventory lists maintained up to date?
+5.52|Are records available to show that samples of foam compound have been tested at regular intervals?
+5.53|Is a fire control plan exhibited within the accommodation, is a copy also available externally and is equipment correctly marked on it?
+5.54|Are fire mains, pumps, hoses, nozzles and hydrants in good order and available for immediate use?
+5.55|Are fire main isolation valves operational?
+5.56|Are isolating valves in fire and foam system lines clearly marked and in good order?
+5.57|Is the International ship/shore connection readily available externally and is the location clearly marked?
+5.58|Are fixed fire detection and alarm systems in good order and tested regularly?
+5.59|Are the main deck, engine room and other fixed fire extinguishing systems, where fitted, in good order and are clear operating instructions posted? Is hyper mist operational and ready for use?
+5.60|Is the emergency fire pump in full operational condition and are starting instructions clearly displayed?
+5.61|Are portable fire extinguishers in good order with operating instructions clearly marked?
+5.62|Are firemen's outfits and breathing apparatus in good order and ready for immediate use?
+5.63|Are emergency escape breathing devices (EEBD's) in the accommodation and engine room in good order and ready for immediate use?
+5.64|Are accommodation ventilation fan emergency stops clearly marked to indicate the spaces they serve and is there evidence of regular testing and maintenance?
+5.65|Are fire flaps/damper clearly marked to indicate the spaces they serve and is there evidence of regular testing and maintenance?
+5.66|Are fire doors in good condition, gas tight, self-closing system/no holdback hooks, hold back arrangements/remote release devices of fail-safe type?
+5.67|Are Material Safety Data Sheets (MSDS) on board for all the products being handled and are all officers familiar with their use?
+5.68|Is a gangway provided? (Check safety net properly rigged)
+5.69|Are accommodation ladders, gangways, pilot ladders and pilot hoists, where fitted, in good order?
+5.70|Are all means of access satisfactory, including the provision of a safety net, lifebuoy and line?
+5.71|Are pilot boarding and access arrangements satisfactory?
+5.72|Are safe access to the bow arrangements satisfactory?
+5.73|If a helicopter landing or winching area is provided, does it meet ICS guidelines?
+5.74|Are marshalling batons intrinsically safe?
+5.75|a. Date of last R.A. related to Cargo Operations
+5.76|Last critical equipment R.A. (date & No.)
+#6|Pollution Prevention
+6.1|Is the engine room (Part I) Oil Record Book correctly completed?
+6.2|Do the sludge and bilge tanks designated in Form A of the IOPP Certificate and those listed in the engine room oil record book, agree?
+6.3|Are the Oil Record Books free of any pollution incidents or violations?
+6.4|Is an approved MARPOL Shipboard Oil Pollution Emergency Plan (SOPEP) provided? Check that drawings as per SOPEP are available.
+6.5|Is crew aware of equipment, its location, a plan for deployment and specific crewmember duties for handling small spills?
+6.6|Is an inventory and inspection checklist posted in each fire locker and in oil spills equipment stations?
+6.7|Is Company's form F.19.4 attached in the SOPEP manual?
+6.8|Is the master aware of port contact procedures and has a contact list been made for this port?
+6.9|Is there a USCG approved Non-Tank Vessel Response Plan (NT-VRP)?
+6.10|Are officers aware of the requirements of MARPOL with respect to the disposal of bilge water?
+6.11|Is the condition of scupper plugs satisfactory and are scuppers effectively plugged?
+6.12|Is the ship fitted with a maindeck boundary coaming?
+6.13|Are means (portable spill pumps) readily available for dealing with small oil spills?
+6.14|Is the vessel free from any visible bulkhead, valve or pipeline leakage liable to cause pollution?
+6.15|Are bunker pipelines tested annually? Date tested: 	 Pressure:
+6.16|Are unused bunker pipeline manifolds fully bolted and are all drains and vents and unused gauge stems, suitably blanked or capped?
+6.17|Are suitable spill containers fitted around all fuel, diesel and lubricating oil tank vents? Are drain plugs in place while vessel is at port?
+6.18|Is a suitable containment fitted around hydraulic and other deck machinery and plugs in place?
+6.19|Are VGP files properly maintained and are relevant records kept accordingly?
+6.20|Does the vessel has ballast water and sediments management plan and are records being maintained of all ballast water exchanges? (Check records for compliance with BMWP)
+6.21|Are all deck officers familiar with the ballast water management?
+6.22|Are the engine room bilge oily water pumping and disposal arrangements in good order?
+6.23|Are emergency bilge pumping arrangements ready for immediate use; is the emergency bilge suction clearly identified and, where fitted, is the emergency overboard discharge valve provided with a notice warning against accidental opening?
+6.24|Are dedicated sludge pumps free from any connection to a direct overboard discharge?
+6.25|Is the oily water separator 15 ppm alarm tested and in good order?
+6.26|Is valid maker's 5 yearly initial calibration certificate available on board?
+6.27|Are specific warning notices posted to safeguard against the accidental opening of the overboard discharge valve from the oily water separator?
+6.28|Has the engine room oily water separator been fitted with an automatic stopping device?
+6.29|Are the arrangements for the disposal of steering compartment oily bilge water adequate?
+6.30|Is garbage been handled and disposed of in accordance with MARPOL and Company's Garbage Management Plan? Are delivery notes of garbages in place?
+6.31|Is crew aware of ship's garbage management plan and relevant records kept?
+6.32|Has the Garbage record Book been correctly completed?
+6.33|Is the crew familiar with proper use of garbage equipment?
+6.34|Is the garbage process equipment in operational condition?
+6.35|Are records available for the delivery of plastics?
+6.36|Are any flammable materials such as cartons, rags, tires, woods, pallets etc exposed in ship's funnel deck and in poop decks?
+6.37|Is ozone depleting substances record book (ODS) or relevant form properly maintained?
+#7|Maritime Security
+7.1|Does the crew has sufficient knowledge of and is familiar with the following?
+7.2|Whilst at port is gangway watch being maintained?
+7.3|Is gangway visitors log duly filled in?
+7.4|Is IMO Number permanently marked as per ISPS Code?
+7.5|Are restricted areas on board properly marked and secured?
+7.6|Is security material on board, in good condition (whistles, ID badges, flashlights)?
+7.7|If the SSP accompanied by the SSA, located on board in a safe place, protected from unauthorized access or disclosure?
+7.8|Are security drills carried out as per schedule?
+7.9|Are security training sessions carried out as per schedule?
+7.10|Has security familiarization been conducted for each crewmember on board the ship and relevant F.ISPS.3 form been completed?
+7.11|Is security logbook being properly completed and kept on board?
+7.12|Has security incident occurred the last six months?
+7.13|Are records of last ten ports of call and DoS available?
+7.14|Does the vessel and/or company have documented software/firmware and hardware maintenance procedures?
+#8|Cargo and ballast systems
+8.1|Are Cargo operations planned and recorded in accordance with BLU code?
+8.2|Is Loadicator operational and test records available?
+8.3|Is a ballast operations log maintained?
+8.4|Is loading/discharging plan F.OPS.3 form properly completed?
+8.5|Is stowage plan F.OPS.8 properly completed?
+#9|Mooring
+9.1|Are all Mooring ropes in good condition?
+9.2|Are certificates available for all mooring/ropes and mooring tails?
+9.3|Do all mooring/ropes and where fitted, meet company's guidelines?
+9.4|Are there records of the inspection and maintenance of mooring ropes, wires & equipment?
+9.6|Are moorings satisfactorily deployed and tended?
+9.7|Are mooring lines secured to bitts and turned up correctly?
+9.8|Are all powered mooring lines correctly reeled on drums?
+9.9|On split drum winches are all the lines made fast with no more than one layer on each tension side of the drum?
+9.10|Are all mooring lines stowed neatly to minimize tripping hazards and are mooring areas clear and unobstructed?
+9.11|Are mooring procedures and mooring planning complied with?
+9.12|Are mooring winches in good order?
+9.13|Do break linings, drums and pins appear to be in good order?
+9.14|Is there a policy in place for the testing of winch brakes and are the results recorded? Record the last Brake Holding capacity test:
+9.15|Are the winches brakes adjusted in order to render at a load equivalent to 60% of the line's MBL?
+9.16|Are pedestal fairleads, roller fairleads and other rollers well greased and free to turn and are bitts and chocks free of grooving?
+9.17|Is mooring equipment marked with its SWL?
+9.18|Are windlasses, anchors, locking bars and cables in a satisfactory condition and operating effectively?
+9.19|Except whilst alongside, when locking bars should be in place, were the anchors cleared and ready for immediate use during port entry?
+9.20|Are bitter end securing arrangements unobstructed and outside the chain locker?
+9.21|Are the chain locker doors securely battened down?
+9.22|Are emergency towing arrangements readily available for deployment forward and aft?
+9.23|Does the vessel have on board Emergency Towing procedures?
+#10|Engine and Steering compartments
+10.1|Is the crew aware of Company's instructions and procedures?
+10.2|Are the duties of the watch-standing officers and ratings clearly defined?
+10.3|If the machinery space is certified for unmanned operation is it being operated in that mode?
+10.4|If the machinery space is being operated manned, is Company's informed and are there sufficient engineers on board?
+10.5|Has the Chief Engineer written his own standing orders and are night orders being completed? (C/E standing orders available and signed by engine officers and TME. Night orders should be written as and when they are required to supplement the standing orders).
+10.6|Are procedures to prevent uncontrolled entry into the engine room followed?
+10.7|Is the dead man alarm system, where fitted, in good order and used as required?
+10.8|Is the engine room log book adequately maintained?
+10.9|Is a complete set of all machinery manuals available and in the English language?
+10.10|Is the fuel, lubricating and hydraulic oil testing program followed?
+10.11|Are the bunker transfer instructions followed?
+10.12|Is the vessel able to safely comply with ECA legislation or other local requirements regarding use of low sulphur fuels in boilers, main plant, auxiliary engines?
+10.13|Are written instructions provided to control the change from residual to low sulphur fuels?
+10.14|Is crew aware of the procedure to restart critical equipment?
+10.15|Is a planned maintenance system being followed and is it up to date?
+10.16|Is the staff onboard trained and familiar in order to use the company's PMS?
+10.17|Is a comprehensive and up to date inventory of spare parts being maintained?
+10.18|Is an engineer's call alarm fitted and is it in good order and tested regularly and the results recorded?
+10.19|Are emergency escape routes clearly marked, unobstructed and adequately lit?
+10.20|Is the level of lighting in all areas of the engine room satisfactory?
+10.21|Are engine room emergency stops and shut offs clearly marked and do records indicate that they have been regularly tested?
+10.22|Are diesel engine high and low pressure fuel delivery pipes adequately jacketed or screened?
+10.23|Are diesel engine exhausts and other hot surfaces in the vicinity of fuel, diesel, lubricating and hydraulic oil pipes protected against spray?
+10.24|Are hot surfaces, particularly diesel engines, free of any evidence of fuel, diesel and lubricating oil?
+10.25|Are purifier rooms and fuel and lubricating oil handling areas ventilated and clean?
+10.26|Are main engine bearing temperature monitors, or the crankcase oil mist detector in good order?
+10.27|Are oil mist detectors fitted in hydraulic aggregate pump compartments?
+10.28|Do records indicate the regular testing of emergency equipment?
+10.29|Are the main switchboard, alternators and other electrical equipment satisfactorily protected from water spray?
+10.30|Is deck insulation provided to the front and rear of medium power (i.e. 220V and above) electrical switchboards and is it in a satisfactory condition?
+10.31|Are gauge glass closing devices on oil tanks of a self closing, fail-safe type and not inhibited?
+10.32|Are self-closing sounding devices to double bottom tanks in good order and closed?
+10.33|Is all moving machinery provided with effective guards where this presents a hazard?
+10.34|Do engine room machine tools have adequate eye protection available?
+10.35|Are records maintained for the regular inspection and testing of lifting devices?
+10.36|Is an inspection and maintenance programme in place for other lifting equipment such as wire slings?
+10.37|Is all loose gear in the machinery spaces, stores and steering compartment properly secured?
+10.38|Are machinery spaces and steering compartments clean and free from obvious leaks and is the overall standard of housekeeping and fabric maintenance satisfactory?
+10.39|Are bilges free of oil, rubbish and sediment?
+10.40|Is the bilge high level alarm system regularly tested and are records maintained?
+10.41|Are seawater pumps, sea chests and associated pipework in a satisfactory condition and free of hard rust and temporary repairs, particularly outboard of the ship-side valves?
+10.42|Are ME exhaust and boiler insulation in good condition?
+10.43|Are engine room floor plates in place and free of obstructions?
+10.44|Are all engine officers familiar with the oil water separator?
+10.45|General appearance
+10.46|Stern gland
+10.47|Lubrication system
+10.48|Starting air system
+10.49|Fuel pumps (Clean without leakages)
+10.50|Protection of hot surfaces against oil leakage / spray
+10.51|High pressure F.O. pipes double wall system and leakage alarm
+10.52|Governor and fuel pump racks adjustment system
+10.53|M/E turbochargers
+10.54|M/E Gauges, sensors and transmitters for monitoring system
+10.55|M/E Protective devices
+10.56|Main engine bearing temperature monitor or cranckcase oil mist detector
+10.57|M/E air cooler (s)
+10.58|Exhaust piping
+10.59|Bridge - E/R control change over system
+10.60|Auxiliary blowers
+10.61|External appearance
+10.62|Protective devices
+10.63|Exhaust gas pipes & insulation
+10.64|Starting and secondary starting system
+10.65|Fuel tank level, and fuel tank quick closing valve
+10.66|Emergency stop devices
+10.67|Operation instructions posted and well understood by all crew
+10.68|External condition
+10.69|Burner condition
+10.70|Safety valves
+10.71|Glass level gauges
+10.72|Protective devices
+10.73|Protection of hot surfaces against oil leakage
+10.74|Soot blower
+10.75|External condition
+10.76|Safety valves
+10.77|Glass level gauges
+10.78|Protective devices
+10.79|Soot blower
+10.80|Exhaust gas inlet / outlet ducts and regulation damper
+10.81|Main & auxiliary sea water cooling pumps
+10.82|Seachest valves
+10.83|Piping and intermediate valves
+10.84|Seachests
+10.85|Flow regulator valves
+10.86|Jacket fresh water cooling pumps
+10.87|Main fresh water cooling pumps
+10.88|Piping and intermediate valves
+10.89|M/E fresh water coolers
+10.90|Automatic flow regulator valves
+10.91|D/G F.W. main cooler
+10.92|Fresh water generator
+10.93|Fresh water expansion tank (s)
+10.94|Bunker tanks
+10.95|Service and settling tanks
+10.96|Transfer pumps
+10.97|Booster pumps
+10.98|Heaters and associated automation
+10.99|Viscosimeter
+10.100|Flowmeters (In good condition, by pass arrangement installed and operational
+10.101|F.O. Purifiers
+10.102|Purifier heaters
+10.103|Purifier rooms and oil handling areas
+10.104|Piping and valves in E/R
+10.105|Bunker & service tanks
+10.106|Transfer pumps
+10.107|D.O. flowmeters
+10.108|Piping and valves in E/R
+10.109|Tanks
+10.110|M/E L.O. pumps
+10.111|M/E L.O. coolers
+10.112|L.O. purifiers
+10.113|Purifier heaters
+10.114|Piping and valves
+10.115|Main lub oil filters
+10.116|Air compressors (main & emerg.) & low pressure air system
+10.117|Emergency starting air compressor
+10.118|Air receivers (main, auxiliary)
+10.119|Air dryers, oil filters, pressure reducers, etc.
+10.120|Compressed air and control air piping
+10.121|Steam piping & valves
+10.122|Condenser
+10.123|Cascade tank
+10.124|Boiler feed water and circulating pumps
+10.125|Condensate piping and valves
+10.126|Distilled water tank
+10.127|External appearance
+10.128|Lubrication system
+10.129|Fuel pumps
+10.130|Protection of hot surfaces against oil leakage
+10.131|High pressure F.O. pipes double wall system and leakage alarm
+10.132|Governor and fuel pump racks adjustment system
+10.133|Turbocharger
+10.134|Gauges, sensors and transmitters
+10.135|Protective devices (Test LO, FW, temperature and pressure alarms and trips.)
+10.136|Air cooler
+10.137|Lub oil cooler
+10.138|Exhaust gas pipes & insulation
+10.139|Bilge pump
+10.140|General service pump
+10.141|Bilge wells
+10.142|Bilge high level alarms
+10.143|Bilge piping and valves
+10.144|Emergency bilge suction
+10.145|E/R bilges
+10.146|Overboard valves
+10.147|Sludge pump and piping
+10.148|Oily water separator
+10.149|Propeller shaft
+10.150|Propeller
+10.151|Intermediate shaft & bearings
+10.152|Stern tube & seals
+10.153|L.O. cooling system
+10.154|Compressors
+10.155|Freon condensers
+10.156|Heating & cooling elements
+10.157|Fans and motors
+10.158|Ventilation ducts and control dampers
+10.159|Freon consumption and recovery practices
+10.160|Steering gear mechanism
+10.161|Gravity tank
+10.162|Emergency steering arrangement
+10.163|Compass
+10.164|Communication
+10.165|Rudder angle indicator
+10.166|Access and safety precautions
+10.167|Fire - weathertight door from E/R. St. gear door to E/R marked "KEEP CLOSED"?
+10.168|Adequate fire-fighting and detection arrangements
+10.169|Compartment bilge system
+10.170|Main & emergency switchboards
+10.171|Electric generators
+10.172|Electric generator protective devices
+10.173|Local starter panels
+10.174|Motors
+10.175|Alarms / Instrumentation of engine control room
+10.176|UMS alarm monitoring & recording system
+10.177|Dead man alarm
+10.178|Engineer call alarm
+10.179|ICCP system / MGPS system
+10.180|Transformers
+10.181|Incinerator
+10.182|Sewage plant
+10.183|Ballast pumps
+10.184|Ballast piping and valves in E/R
+10.185|E/R crane
+10.186|Exhaust fans and trunking
+10.187|Sounding pipes of double bottom tanks
+10.188|Shaft guards
+10.189|Cleanliness
+10.190|Lathe, drill, grinding machine and other E/R machine tools
+10.191|Welding equipment
+10.192|Safety signs, lighting, ventilation
+10.193|Spare parts storage
+10.194|Tools lockers
+10.195|Access ladders, gangway, work platforms, gratings etc.
+10.196|Emergency escape routes
+10.197|Lighting fixtures and lighting level
+10.198|Oxygen / acetylene bottles and cutting equipment
+10.199|Fixed piping installed from the gas cylinders to the operating position
+10.200|Hand torches
+10.201|Are drawings available in engine room?
+10.202|Are signs "DO NOT USE"and "NOT IN OPERATION"available in engine room and ready for use
+10.203|Are emergency steering gear changeover procedures clearly displayed in steering flat?
+10.204|Is there a compass or compass receptacle at the emergency steering position in the steering flat and aligned with master one
+10.205|Are communications with the bridge satisfactory from steering position
+10.206|Is the rudder angle indicator clearly visible from steering position
+10.207|Is piping in engine room in good condition
+10.208|Are C/E's night order book properly kept
+10.209|Is planned maintenance program followed
+10.210|Is U.M.S. operation satisfactory
+10.211|Condition of tank coating, steel plates, last clean/disinfected:
+10.212|Is the Ship Energy Efficiency Management Plan (SEEMP) followed?
+10.213|Are Company Forms F.SEEMP.1 & 2 properly completed?
+10.214|Are speed selection and shaft power optimization / Slow steaming performed?
+10.215|Is Weather routing technique implemented? - Check familiarity with Bon Voyage
+10.216|Is Crew familiarized with energy efficiency practices and SEEMP?
+10.217|Is Fuel management / bunker consumption reporting properly implemented?
+10.218|Are sounding tapes, used for fuel measurement in good condition and calibrated?
+#11|General appearance and condition
+11.1|Are the general condition, visual appearance and cleanliness of the hull satisfactory?
+11.2|Are hull markings clearly indicated and correctly placed?
+11.3|Are the general condition, visual appearance and cleanliness of the weather decks satisfactory?
+11.4|Do decks in working areas have clearly identified non-slip surfaces?
+11.5|Is the general condition of service pipework satisfactory and is it free from significant corrosion and pitting and soft patches or other temporary repairs?
+11.6|Are pipe stands, clamps, supports and expansion arrangements satisfactory?
+11.7|Are all deck openings, including weathertight doors and portholes, in a satisfactory condition and capable of being properly secured?
+11.8|Are fuel, ballast and other space vents and air pipes in a satisfactory condition and does visual evidence indicate regular maintenance?
+11.9|Are all vents and air pipes clearly marked to indicate the spaces they serve?
+11.10|Are the general condition, visual appearance & cleanliness of the superstructure satisfactory?
+11.11|Is deck lighting adequate?
+11.12|Is the general condition of electrical equipment, including conduits and wiring, satisfactory?
+11.13|Are internal spaces and storerooms clean, free from debris and tidy?
+11.14|Is the forecastle space free of water?
+11.15|Are alleyways free of obstructions and exits clearly marked?
+11.16|Are accommodation, public spaces, including smoke rooms, mess rooms, sanitary areas, food storerooms, food handling spaces, refrigerated spaces, galleys and pantries clean, tidy and in a hygienic condition?
+11.17|Are laundries free of accumulations of clothing that could constitute a fire hazard?
+11.18|If fitted, is the ship's Hospital clean and tidy and ready for use?
+11.19|Is the level of accommodation lighting satisfactory?
+11.20|Is the condition of electrical equipment in the accommodation satisfactory?
+11.21|Are personnel alarms in refrigerated spaces in good order?
+#12|Structural condition
+12.38|Shell plating (P&S)
+12.39|Deck plating including forecastle and poop
+12.40|Deck plating between hatches
+12.41|Deck pipes and valves (fire main, bunker and hydraulic)
+12.42|Air vents and Sounding pipes
+12.43|Watertight openings, access hatches, manholes
+12.44|Ventilators, Mushroom heads (including fire flaps)
+12.45|Railings, bulwarks and ramps
+12.46|Gangway, accommodation, deck and pilot ladders
+12.47|Non-slip paint, if applied
+12.48|Windlass, winches:
+12.49|Bollards, rollers & fairleads
+12.50|Mooring ropes, wires, anchors & cables
+12.51|Is a ship specific emergency towing procedure provided?
+12.52|Bunkering connections, manifolds, save all
+12.53|Other deck machinery including storing and bunkering cranes
+12.54|Deck lighting
+#12a|Condition of Cranes
+#13|Defects/Deficiencies Follow-up

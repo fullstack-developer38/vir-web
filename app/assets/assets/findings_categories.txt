@@ -1,0 +1,82 @@
+﻿#10. Machinery Spaces
+10.1 Engineering Procedures
+10.2 Machinery Status
+10.3 Safety Management
+10.4 Planned Maintenance Systems
+10.5 Conventional Bunkering Management
+10.6 LNG Bunkering Management
+10.7 Fire Protection Measures
+#11. General Appearance and Condition
+11.1 Photograph comparison
+#12. Ice Operations
+12.1 Ice operations training
+12.2 Sub-zero LSA & FFA procedures
+12.3 Sub-zero machinery operation procedures
+12.4 Sub-zero cargo and ballast operation procedures
+12.5 Sub-zero deck machinery operation procedures
+12.6 Ice navigation procedures
+#2. Certification and Documentation
+2.1 Certification
+2.2 Management Oversight
+2.3 Structural Assessment
+2.4 Defect Management
+2.5 Management of Change
+2.6 Statutory Management Plans
+2.7 Safety Management System
+2.8 General Information
+#3. Crew Management
+3.1 Crew Qualification
+3.2 Crew Evaluation
+3.3 Crew Training
+3.4 Crew Compliance
+3.5 Crew Familiarisation
+#4. Navigation and Communications
+4.1 Navigation Equipment
+4.2 Navigational Procedures
+4.3 Bridge and Machinery Space Team Management
+4.4 Communications Equipment and Procedures
+4.5 DP & Shuttle Tanker Specialist Procedures and Equipment
+#5. Safety Management
+5.10 Safe Access
+5.11 Sample Management
+5.12 Safety Equipment
+5.1 Emergency Response Plans and Drills
+5.2 Fixed Fire Protection Systems
+5.3 Portable fire fighting appliances
+5.4 Life saving appliances
+5.5 Permits to work
+5.6 Fixed and portable gas detecting systems
+5.7 Safety Management
+5.8 Area Safety Inspections
+5.9 Lifting and Rigging
+#6. Pollution Prevention
+6.1 Pollution Prevention - Record Books
+6.2 Cargo and Bunker Operations
+6.3 Ballast Operations
+6.4 Deck Area Pollution Prevention
+6.5 Machinery Space Pollution Prevention
+6.6 Oil Discharge Monitors
+#7. Maritime Security
+7.1 Ship Routing
+7.2 Ship Hardening and access control
+7.3 Communications and Monitoring
+7.4 Ship Security Officer
+7.5 Cyber Security
+#8. Cargo and Ballast Systems
+8.1 Oil
+8.2 Chemicals
+8.3 Oil and Chemical
+8.4 LPG
+8.5 LNG
+8.6 Gas (common to all vessels under IGC Code)
+8.7 Shuttle Tanker Cargo Operations
+8.8 OBO / Combination Carriers
+8.99 All types
+#9. Mooring and Anchoring
+9.1 Mooring Equipment Management
+9.2 Emergency Towing Arrangement
+9.3 Mooring and Anchoring Procedures
+9.4 Mooring and Anchoring Team Management
+9.5 STS Operation Management
+9.6 Single Point Mooring
+9.7 Shuttle Tanker Mooring Systems

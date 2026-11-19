@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Access IP Group Apps</title>
+  <link rel="icon" type="image/png" href="app/favicon.png"/>
+  <meta name="theme-color" content="#12305B">
+  <meta name="description" content="Install the IP Group apps on iPhone, Android or PC.">
+  <style>
+    :root {
+      --navy: #12305B;
+      --navy-deep: #0B2140;
+      --ink: #1D2733;
+      --muted: #64748B;
+      --line: #E2E8F0;
+      --bg: #F6F9FC;
+      --card: #FFFFFF;
+      --tint-blue: #E7F0FB;
+      --tint-green: #E4F4EA;
+      --tint-purple: #EDEAF8;
+      /* Kept separate from --navy so they can flip for dark mode. Navy is a
+         dark colour: on a dark card it disappears, which is what happened to
+         the titles and icons. */
+      --tile-title: #12305B;
+      --icon-blue: #12305B;
+      --icon-green: #2FA463;
+      --icon-purple: #5B4B9B;
+      --go-bg: #12305B;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    /* Nothing may push the page wider than the screen. Without this the hero
+       artwork scrolled the whole page sideways on a narrow window and clipped
+       the title. */
+    html, body { max-width: 100%; overflow-x: hidden; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ---- hero -------------------------------------------------------- */
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 34px 22px 30px;
+      color: #fff;
+      background:
+        radial-gradient(120% 90% at 78% 18%, rgba(86,140,200,.55) 0%, rgba(18,48,91,0) 60%),
+        linear-gradient(160deg, #1B4272 0%, var(--navy) 45%, var(--navy-deep) 100%);
+    }
+    /* Sea, horizon and a tanker, drawn rather than photographed. The client's
+       design has a photo behind the title; this keeps the same feel while the
+       page stays self-contained, loads instantly and works offline. Swapping in
+       a real photograph later is a one-line background change. */
+    .hero-art {
+      position: absolute;
+      inset: 0;
+      width: 100%; height: 100%;
+      pointer-events: none;
+      opacity: .55;
+    }
+    /* The title must win over the artwork. On a phone the ship reaches the
+       text, so the left half is darkened and the heading sits above both. */
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(96deg,
+        var(--navy-deep) 0%, rgba(11,33,64,.92) 34%,
+        rgba(11,33,64,.55) 62%, rgba(11,33,64,.15) 100%);
+      pointer-events: none;
+    }
+    .hero h1, .hero p { position: relative; z-index: 2; }
+    .hero h1 {
+      margin: 0 0 6px;
+      font-size: clamp(24px, 6vw, 32px);
+      font-weight: 700;
+      letter-spacing: -0.4px;
+      position: relative;
+    }
+    .hero p { margin: 0; opacity: .82; font-size: 15px; position: relative; }
+
+    /* ---- tiles ------------------------------------------------------- */
+    main { max-width: 760px; margin: 0 auto; padding: 22px 16px 30px; }
+    /* Always two per row, at every width, so all four are on screen together
+       without scrolling - the client asked for this. The tiles shrink instead
+       of reflowing to one column. */
+    .tiles {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+    .tile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 24px 18px 20px;
+      text-decoration: none;
+      color: inherit;
+      box-shadow: 0 1px 2px rgba(16,40,74,.05);
+      transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+    }
+    .tile:hover, .tile:focus-visible {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 24px rgba(16,40,74,.12);
+      border-color: #CBD8E8;
+      outline: none;
+    }
+    .badge {
+      width: 78px; height: 78px;
+      border-radius: 50%;
+      display: grid; place-items: center;
+      margin-bottom: 16px;
+      background: var(--tint-blue);
+    }
+    .badge.green { background: var(--tint-green); }
+    .badge.purple { background: var(--tint-purple); }
+    /* The icons draw with currentColor, so one colour per badge controls the
+       whole drawing and can flip with the theme. */
+    .badge { color: var(--icon-blue); }
+    .badge.green { color: var(--icon-green); }
+    .badge.purple { color: var(--icon-purple); }
+    .badge svg { width: 38px; height: 38px; }
+    .tile h2 {
+      margin: 0 0 8px;
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--tile-title);
+      line-height: 1.3;
+    }
+    .tile p {
+      margin: 0 0 18px;
+      font-size: 13.5px;
+      color: var(--muted);
+      max-width: 24ch;
+    }
+    .go {
+      margin-top: auto;
+      width: 34px; height: 34px;
+      border-radius: 50%;
+      background: var(--go-bg);
+      display: grid; place-items: center;
+    }
+    .go svg { width: 16px; height: 16px; }
+
+    /* ---- detail pages ------------------------------------------------ */
+    .detail { display: none; }
+    .detail:target { display: block; }
+    .panel {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 22px 20px 24px;
+    }
+    .panel h2 {
+      margin: 0 0 4px;
+      font-size: 20px;
+      color: var(--navy);
+      display: flex; align-items: center; gap: 10px;
+    }
+    .panel .lede { margin: 0 0 18px; color: var(--muted); font-size: 14px; }
+    .back {
+      display: inline-flex; align-items: center; gap: 7px;
+      margin-bottom: 16px;
+      color: var(--navy);
+      text-decoration: none;
+      font-size: 14px; font-weight: 600;
+    }
+    .back:hover { text-decoration: underline; }
+    ol, ul { margin: 12px 0 0; padding-left: 22px; }
+    li { margin-bottom: 8px; font-size: 15px; }
+    .btn {
+      display: inline-block;
+      background: var(--navy);
+      color: #fff;
+      text-decoration: none;
+      padding: 12px 20px;
+      border-radius: 9px;
+      font-size: 15px;
+      font-weight: 600;
+    }
+    .btn.green { background: #1E8E5A; }
+    .btn:hover { opacity: .93; }
+    .size { color: var(--muted); font-size: 12.5px; margin-left: 10px; }
+    .note {
+      background: #FFF8E6;
+      border: 1px solid #F0DFA8;
+      border-radius: 9px;
+      padding: 12px 14px;
+      font-size: 13.5px;
+      margin-top: 16px;
+    }
+    .note strong { color: #8A6100; }
+
+    footer {
+      text-align: center;
+      padding: 6px 20px 40px;
+      color: var(--muted);
+      font-size: 12.5px;
+    }
+    .mark {
+      display: flex; align-items: center; justify-content: center; gap: 14px;
+      margin-bottom: 12px;
+    }
+    .mark span { height: 1px; width: 70px; background: var(--line); }
+    .mark div {
+      width: 30px; height: 30px; border-radius: 50%;
+      border: 1px solid var(--line);
+      display: grid; place-items: center;
+      font-size: 11px; font-weight: 700; color: var(--muted);
+      letter-spacing: .5px;
+    }
+
+    /* Phones: two columns still, but everything tightened so the header and
+       all four tiles fit on one screen. */
+    @media (max-width: 560px) {
+      .hero { padding: 22px 18px 20px; }
+      main { padding: 14px 12px 18px; }
+      .tiles { gap: 11px; }
+      .tile { padding: 16px 10px 14px; border-radius: 14px; }
+      .badge { width: 56px; height: 56px; margin-bottom: 10px; }
+      .badge svg { width: 30px; height: 30px; }
+      .tile h2 { font-size: 14.5px; margin-bottom: 5px; }
+      .tile p { font-size: 11.8px; margin-bottom: 12px; max-width: none; }
+      .go { width: 30px; height: 30px; }
+      .go svg { width: 14px; height: 14px; }
+      footer { padding: 2px 16px 24px; }
+      .mark { margin-bottom: 8px; }
+      .mark span { width: 48px; }
+    }
+
+    /* Short screens, e.g. a phone in landscape or a small laptop window:
+       squeeze a little further rather than let the last row fall off. */
+    @media (max-height: 700px) and (max-width: 560px) {
+      .hero { padding: 16px 18px 15px; }
+      .hero h1 { font-size: 21px; }
+      .hero p { font-size: 13px; }
+      .badge { width: 46px; height: 46px; margin-bottom: 7px; }
+      .badge svg { width: 25px; height: 25px; }
+      .tile { padding: 12px 8px 11px; }
+      .tile p { font-size: 11px; margin-bottom: 9px; }
+      .go { width: 27px; height: 27px; }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --ink: #EAEFF7; --muted: #A3B2C6; --line: #33415C;
+        --bg: #0E1526; --card: #1C2942;
+        --tint-blue: #2A3F5E; --tint-green: #21402F; --tint-purple: #332E52;
+        /* Light enough to read on the dark card. The navy versions vanished. */
+        --tile-title: #D6E6FA;
+        --icon-blue: #93C2F2;
+        --icon-green: #5BD694;
+        --icon-purple: #BFAEF5;
+        --go-bg: #2E6FB8;
+      }
+      .panel h2, .back { color: #D6E6FA; }
+      .note { background: #2A2415; border-color: #4A3F1E; }
+      .note strong { color: #E8C978; }
+      .note a, .panel a { color: #93C2F2; }
+      .tile:hover, .tile:focus-visible { border-color: #4A5C7E; }
+      .btn { background: #2E6FB8; }
+      .btn.green { background: #22A05F; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="hero">
+    <svg class="hero-art" viewBox="0 0 400 150" preserveAspectRatio="xMaxYMid slice"
+         aria-hidden="true" focusable="false">
+      <!-- hazy headlands on the horizon, as in the photograph -->
+      <path d="M198 74 L232 50 L266 74 Z" fill="#7FA6CE" opacity=".30"/>
+      <path d="M248 74 L292 44 L340 74 Z" fill="#7FA6CE" opacity=".24"/>
+      <path d="M318 74 L356 56 L400 74 Z" fill="#7FA6CE" opacity=".20"/>
+
+      <!-- sea -->
+      <rect x="0" y="74" width="400" height="76" fill="#2A6BA6" opacity=".50"/>
+      <rect x="0" y="74" width="400" height="4" fill="#DCEAF7" opacity=".18"/>
+
+      <!-- laden tanker, bow to the left, accommodation and funnel aft -->
+      <g opacity=".92">
+        <!-- hull: raked stem, long low freeboard, transom stern -->
+        <path d="M214 92 Q222 90 232 89 L360 88 L362 103 L232 104 Q220 101 214 92 Z"
+              fill="#101E36"/>
+        <!-- boot topping at the waterline -->
+        <path d="M218 99 Q226 99 234 99 L361 98 L362 103 L232 104 Q222 102 218 99 Z"
+              fill="#6E2230" opacity=".55"/>
+        <!-- main deck -->
+        <rect x="228" y="86" width="132" height="3" fill="#1B3358"/>
+
+        <!-- accommodation block, stepped like a real superstructure -->
+        <path d="M330 70 L356 70 L356 86 L330 86 Z" fill="#16263F"/>
+        <path d="M334 64 L352 64 L352 70 L334 70 Z" fill="#16263F"/>
+        <!-- bridge wings -->
+        <rect x="327" y="70" width="32" height="2.5" fill="#16263F"/>
+        <!-- lit windows -->
+        <rect x="335" y="66" width="16" height="1.8" fill="#BBD6EE" opacity=".75"/>
+        <rect x="333" y="74" width="20" height="1.8" fill="#BBD6EE" opacity=".55"/>
+        <rect x="333" y="79" width="20" height="1.8" fill="#BBD6EE" opacity=".40"/>
+        <!-- funnel, raked aft -->
+        <path d="M340 52 L349 52 L347 64 L342 64 Z" fill="#16263F"/>
+
+        <!-- foremast and deck pipework -->
+        <rect x="236" y="74" width="1.6" height="12" fill="#16263F"/>
+        <rect x="231" y="79" width="11" height="1.4" fill="#16263F"/>
+        <rect x="268" y="80" width="2" height="6" fill="#16263F"/>
+        <rect x="288" y="78" width="2" height="8" fill="#16263F"/>
+        <rect x="308" y="80" width="2" height="6" fill="#16263F"/>
+        <rect x="282" y="83" width="26" height="1.6" fill="#16263F"/>
+      </g>
+
+      <!-- bow wave and wake -->
+      <path d="M210 99 Q220 95 231 99" stroke="#EAF3FB" stroke-width="3"
+            fill="none" opacity=".65" stroke-linecap="round"/>
+      <path d="M204 104 Q226 99 250 103" stroke="#EAF3FB" stroke-width="2"
+            fill="none" opacity=".40" stroke-linecap="round"/>
+      <path d="M360 104 Q384 108 400 105" stroke="#EAF3FB" stroke-width="2.2"
+            fill="none" opacity=".45" stroke-linecap="round"/>
+      <path d="M352 110 Q378 115 400 112" stroke="#EAF3FB" stroke-width="1.4"
+            fill="none" opacity=".28" stroke-linecap="round"/>
+    </svg>
+    <h1>Access IP Group Apps</h1>
+    <p>Choose your device to get started</p>
+  </header>
+
+  <main>
+    <div class="tiles">
+
+      <a class="tile" href="app/">
+        <div class="badge">
+          <!-- a phone held upright, as in the design -->
+          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.1"
+               stroke-linecap="round" stroke-linejoin="round">
+            <rect x="12" y="4" width="16" height="32" rx="3.4"/>
+            <line x1="17.5" y1="8.4" x2="22.5" y2="8.4"/>
+            <line x1="17" y1="31.6" x2="23" y2="31.6"/>
+          </svg>
+        </div>
+        <h2>Open the app</h2>
+        <p>Access IP Group apps directly in your browser.</p>
+        <span class="go">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4"
+               stroke-linecap="round" stroke-linejoin="round">
+            <line x1="4" y1="12" x2="19" y2="12"/><polyline points="13,6 19,12 13,18"/>
+          </svg>
+        </span>
+      </a>
+
+      <a class="tile" href="#iphone">
+        <div class="badge">
+          <!-- an iPad with an iPhone in front of it, as in the design -->
+          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.1"
+               stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8 6.5h17a2.6 2.6 0 0 1 2.6 2.6v14"/>
+            <path d="M27.6 27.6v3.8A2.6 2.6 0 0 1 25 34H8a2.6 2.6 0 0 1-2.6-2.6V9.1A2.6 2.6 0 0 1 8 6.5"/>
+            <!-- The phone sits in front of the tablet, so it is filled with the
+                 badge colour rather than a fixed light one. -->
+            <rect x="23.5" y="17" width="11" height="19" rx="2.6"
+                  fill="var(--tint-blue)"/>
+            <line x1="27" y1="20.4" x2="31" y2="20.4"/>
+            <line x1="27.5" y1="32.6" x2="30.5" y2="32.6"/>
+          </svg>
+        </div>
+        <h2>iPhone and iPad</h2>
+        <p>Learn how to install and use the apps on your iPhone or iPad.</p>
+        <span class="go">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4"
+               stroke-linecap="round" stroke-linejoin="round">
+            <line x1="4" y1="12" x2="19" y2="12"/><polyline points="13,6 19,12 13,18"/>
+          </svg>
+        </span>
+      </a>
+
+      <a class="tile" href="#android">
+        <div class="badge green">
+          <!-- the Android robot, drawn solid like the design rather than as
+               an outline, which read as a random shape at this size -->
+          <svg viewBox="0 0 40 40" fill="currentColor">
+            <path d="M11.6 17.2h16.8v11.4a1.9 1.9 0 0 1-1.9 1.9H13.5a1.9 1.9 0 0 1-1.9-1.9z"/>
+            <rect x="6.2" y="17.2" width="3.6" height="9.6" rx="1.8"/>
+            <rect x="30.2" y="17.2" width="3.6" height="9.6" rx="1.8"/>
+            <rect x="14.6" y="30.5" width="3.6" height="6.6" rx="1.8"/>
+            <rect x="21.8" y="30.5" width="3.6" height="6.6" rx="1.8"/>
+            <path d="M11.7 15.4a8.3 8.3 0 0 1 16.6 0z"/>
+            <g stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+              <line x1="13.6" y1="6.6" x2="15.7" y2="9.7"/>
+              <line x1="26.4" y1="6.6" x2="24.3" y2="9.7"/>
+            </g>
+            <!-- Eyes are cut out of the head, so they take the badge colour. -->
+            <circle cx="16.4" cy="12.4" r="1.2" fill="var(--tint-green)"/>
+            <circle cx="23.6" cy="12.4" r="1.2" fill="var(--tint-green)"/>
+          </svg>
+        </div>
+        <h2>Android phone or tablet</h2>
+        <p>Learn how to install and use the apps on your Android device.</p>
+        <span class="go">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4"
+               stroke-linecap="round" stroke-linejoin="round">
+            <line x1="4" y1="12" x2="19" y2="12"/><polyline points="13,6 19,12 13,18"/>
+          </svg>
+        </span>
+      </a>
+
+      <a class="tile" href="#windows">
+        <div class="badge purple">
+          <!-- a laptop showing the four-pane Windows mark, as in the design -->
+          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.1"
+               stroke-linecap="round" stroke-linejoin="round">
+            <rect x="7.5" y="8" width="25" height="17" rx="2.2"/>
+            <path d="M4.5 30.5h31" />
+            <g fill="currentColor" stroke="none">
+              <rect x="15" y="12.4" width="4.2" height="4.2" rx=".5"/>
+              <rect x="20.8" y="12.4" width="4.2" height="4.2" rx=".5"/>
+              <rect x="15" y="18.2" width="4.2" height="4.2" rx=".5"/>
+              <rect x="20.8" y="18.2" width="4.2" height="4.2" rx=".5"/>
+            </g>
+          </svg>
+        </div>
+        <h2>Windows PC</h2>
+        <p>Learn how to access and use the apps on your Windows PC.</p>
+        <span class="go">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4"
+               stroke-linecap="round" stroke-linejoin="round">
+            <line x1="4" y1="12" x2="19" y2="12"/><polyline points="13,6 19,12 13,18"/>
+          </svg>
+        </span>
+      </a>
+
+    </div>
+
+    <!-- ---- detail pages, opened from a tile ------------------------- -->
+
+    <section class="detail" id="iphone">
+      <a class="back" href="#">&larr; All devices</a>
+      <div class="panel">
+        <h2>iPhone and iPad</h2>
+        <p class="lede">Add the app to your home screen. It opens full screen
+          with its own icon and works offline.</p>
+        <ol>
+          <li>Open <a href="app/">the app</a> in <strong>Safari</strong>, not Chrome</li>
+          <li>Tap the <strong>Share</strong> button, the square with an arrow pointing up</li>
+          <li>Scroll down and tap <strong>Add to Home Screen</strong></li>
+          <li>Tap <strong>Add</strong></li>
+        </ol>
+        <div class="note">
+          <strong>Why there is no file to download for iPhone.</strong> Apple only
+          allows iPhone apps to be installed through the App Store, so an app file
+          cannot be downloaded from a web page the way it can on Android. The home
+          screen version above is the same app and it works offline.
+        </div>
+      </div>
+    </section>
+
+    <section class="detail" id="android">
+      <a class="back" href="#">&larr; All devices</a>
+      <div class="panel">
+        <h2>Android phone or tablet</h2>
+        <p class="lede">A normal app that you install once.</p>
+        <p><a class="btn" href="https://github.com/fullstack-developer38/vir-web/releases/latest/download/VesselInspection-Android.apk">Download for Android</a>
+          <span class="size">about 60 MB</span></p>
+        <ol>
+          <li>Tap the button above to download the file</li>
+          <li>Open it. Android asks for permission to install from this source, allow it once</li>
+          <li>Tap <strong>Install</strong></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="detail" id="windows">
+      <a class="back" href="#">&larr; All devices</a>
+      <div class="panel">
+        <h2>Windows PC</h2>
+        <p class="lede">A normal program. It never needs internet, not even the
+          first time.</p>
+        <p><a class="btn" href="https://github.com/fullstack-developer38/vir-web/releases/latest/download/VesselInspection-Windows.zip">Download for Windows</a>
+          <span class="size">about 15 MB</span></p>
+        <ol>
+          <li>Download the file and <strong>unzip</strong> it</li>
+          <li>Open the folder and double click <strong>vessel_inspection.exe</strong></li>
+          <li>Keep all the files together in the folder, otherwise the program will not start</li>
+        </ol>
+        <div class="note">
+          <strong>Or install the browser version instead.</strong> Open
+          <a href="app/">the app</a> in Chrome or Edge and click the install icon
+          in the address bar. It becomes a desktop app with its own window and icon.
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="mark"><span></span><div>IP</div><span></span></div>
+    Everything works offline once installed. All data stays on your own device.
+  </footer>
+
+  <script>
+    // Show one view at a time: the tiles, or the detail a tile opens. CSS
+    // :target already reveals the detail, so without JavaScript the page still
+    // works - this only hides the tiles so the detail reads as its own page.
+    (function () {
+      var tiles = document.querySelector('.tiles');
+      var ids = ['#iphone', '#android', '#windows'];
+      function sync() {
+        var open = ids.indexOf(window.location.hash) !== -1;
+        tiles.style.display = open ? 'none' : '';
+        if (open) window.scrollTo(0, 0);
+      }
+      window.addEventListener('hashchange', sync);
+      sync();
+    })();
+  </script>
+
+</body>
+</html>

@@ -128093,7 +128093,7 @@ h.push(new A.ao(B.fG,A.Xh(B.jF,B.b7L,new A.adz(this,a,l)),m))
 h.push(B.dm)
 h.push(new A.ao(B.fG,A.Xh(B.a0w,B.b6_,new A.adA(a)),m))
 h.push(B.bbl)
-h.push(A.fA(A.fg(!1,m,m,m,!0,m,m,m,!0,m,m,B.a08,m,m,m,m,m,!1,m,m,m,m,m,A.a0("VIR_20261121",m,m,m,m,B.fa,m,m,m),m,B.b6d,m,A.dC(m,m,m,B.a0o,m,m,new A.adB(a),m,m,m,"Copy",m),m),m,m))
+h.push(A.fA(A.fg(!1,m,m,m,!0,m,m,m,!0,m,m,B.a08,m,m,m,m,m,!1,m,m,m,m,m,A.a0("VIR_20261123",m,m,m,m,B.fa,m,m,m),m,B.b6d,m,A.dC(m,m,m,B.a0o,m,m,new A.adB(a),m,m,m,"Copy",m),m),m,m))
 h.push(B.bbn)
 i=k.a.a
 i===$&&A.a()
@@ -130205,7 +130205,7 @@ D(a){var s,r,q,p=null,o=A.cg(a,!0,t.V)
 if(o.e)return B.aYi
 s=o.r?new A.alb(this,a,o):p
 r=t.p
-s=A.nP(p,A.bs(A.b([B.b7h,A.a0("Rev. VIR_20261121",p,p,p,p,B.b3E,p,p,p)],r),B.aC,B.J,B.aH,0,B.Y),B.aj,!1,p,p,p,p,p,p,p,s,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p)
+s=A.nP(p,A.bs(A.b([B.b7h,A.a0("Rev. VIR_20261123",p,p,p,p,B.b3E,p,p,p)],r),B.aC,B.J,B.aH,0,B.Y),B.aj,!1,p,p,p,p,p,p,p,s,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p)
 r=A.b([],r)
 if(!o.r){q=o.f
 r.push(A.dC(p,p,p,A.ex(q!=null&&q.length!==0?B.za:B.zd,p,p,p,p),p,p,new A.alc(this,a,o),p,p,p,"Admin area",p))}return A.b4s(A.fl(A.fL(r,B.b0v,s,p),B.b0t,p,A.ajo(B.bC,B.I,B.jF,B.QY,new A.ald(a))),2)},
@@ -131753,14 +131753,14 @@ case 39:s=40
 return A.q(a8.cQ("bundled_templates_version"),$async$dL)
 case 40:p=b1
 a6=A.iy(p==null?"":p,null)
-s=(a6==null?0:a6)<1?41:42
+s=(a6==null?0:a6)<2?41:42
 break
 case 41:s=45
 return A.q(q.th(),$async$dL)
 case 45:s=b1?43:44
 break
 case 43:s=46
-return A.q(a8.ie("bundled_templates_version","1"),$async$dL)
+return A.q(a8.ie("bundled_templates_version","2"),$async$dL)
 case 46:case 44:case 42:s=47
 return A.q(a7.Jf(),$async$dL)
 case 47:p=b1
@@ -136488,7 +136488,7 @@ B.x6=new A.afr(1,"intersect")
 B.V=new A.yl(1,"hardEdge")
 B.c3=new A.yl(2,"antiAlias")
 B.e9=new A.yl(3,"antiAliasWithSaveLayer")
-B.VW=new A.ty("VIR_20261121")
+B.VW=new A.ty("VIR_20261123")
 B.q4=new A.yp(0,"pasteable")
 B.q5=new A.yp(1,"unknown")
 B.b06=new A.wm(1,"closeButton")
